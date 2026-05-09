@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nandini Doraswamy | Aspiring Data Analyst</title>
+    <!-- Core CSS (Includes Animations) -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Scroll Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+
+    <!-- Smooth Scrolling Header -->
+    <header class="navbar">
         <div class="logo">ND<span>.</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </header>
 
+    <!-- Hero Section with Animated Background -->
     <section id="home" class="hero">
-        <div class="hero-content" data-aos="fade-up">
+        <div class="mesh-bg"></div> <!-- Animated background element -->
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
             <div class="profile-placeholder">ND</div>
-            <h1>Nandini Doraswamy</h1>
+            <h1 class="glitch" data-text="Nandini Doraswamy">Nandini Doraswamy</h1>
             <p class="tagline">Aspiring Data Analyst | Python • SQL • Excel • Automation</p>
             <p class="intro">Computer Science graduate passionate about Data Analytics and solving real-world problems through data.</p>
             <div class="hero-btns">
-                <a href="#" class="btn btn-primary">Resume <i class="fas fa-download"></i></a>
+                <a href="#" class="btn btn-primary pulse">Resume <i class="fas fa-download"></i></a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
     </section>
 
+    <!-- About Section with Fade-In -->
     <section id="about" class="section">
         <h2 class="section-title" data-aos="fade-right">About Me</h2>
         <div class="glass-card" data-aos="fade-up">
@@ -40,39 +48,94 @@
         </div>
     </section>
 
+    <!-- Skills Section with Staggered Grid Animations -->
     <section id="skills" class="section">
         <h2 class="section-title" data-aos="fade-right">Technical Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card" data-aos="zoom-in">Python</div>
-            <div class="skill-card" data-aos="zoom-in">SQL / MySQL</div>
-            <div class="skill-card" data-aos="zoom-in">Power BI</div>
-            <div class="skill-card" data-aos="zoom-in">Excel</div>
-            <div class="skill-card" data-aos="zoom-in">SSIS/SSRS</div>
-            <div class="skill-card" data-aos="zoom-in">Java</div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2 class="section-title" data-aos="fade-right">Professional Experience</h2>
-        <div class="glass-card" data-aos="fade-up">
-            <h3>Data Analyst Intern</h3>
-            <p class="company">Omega Healthcare | Jan 2026 – Apr 2026</p>
-            <p>Developed a Python automation engine reducing a 4-hour process to 15 minutes.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="contact-card glass-card" data-aos="flip-up">
-            <h2>Let's Connect</h2>
-            <div class="contact-links">
-                <p><i class="fas fa-envelope"></i> nandini@email.com</p>
-                <p><i class="fab fa-linkedin"></i> LinkedIn.com/in/nandini</p>
-                <p><i class="fas fa-phone"></i> +91 00000 00000</p>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fab fa-python skill-icon"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-database skill-icon"></i>
+                <span>SQL / MySQL</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-chart-line skill-icon"></i>
+                <span>Power BI</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-file-excel skill-icon"></i>
+                <span>Excel</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fas fa-server skill-icon"></i>
+                <span>SSIS/SSRS</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fab fa-java skill-icon"></i>
+                <span>Java</span>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section with Smooth Slide -->
+    <section id="experience" class="section">
+        <h2 class="section-title" data-aos="fade-right">Professional Experience</h2>
+        <div class="glass-card experience-card" data-aos="fade-up">
+            <div class="card-header">
+                <h3>Data Analyst Intern</h3>
+                <span class="date">Jan 2026 – Apr 2026</span>
+            </div>
+            <p class="company">Omega Healthcare</p>
+            <p class="desc">Developed a Python automation engine reducing a 4-hour process to 15 minutes.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section with Flip-In -->
+    <section id="contact" class="section">
+        <div class="contact-card glass-card" data-aos="flip-up" data-aos-duration="1000">
+            <h2>Let's Connect</h2>
+            <p class="cta-text">I'm actively seeking opportunities as a Data Analyst.</p>
+            <div class="contact-links">
+                <a href="mailto:nandini@email.com"><i class="fas fa-envelope"></i> nandini@email.com</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn.com/in/nandini</a>
+                <a href="tel:+910000000000"><i class="fas fa-phone"></i> +91 00000 00000</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nandini Doraswamy. Built with Passion.</p>
+    </footer>
+
+    <!-- AOS Scroll Animation Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        // Initialize Animations
+        AOS.init();
+
+        // Highlighting active nav link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.onscroll = () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href').includes(current)) {
+                    a.classList.add('active');
+                }
+            });
+        };
+    </script>
 </body>
+
 </html>
