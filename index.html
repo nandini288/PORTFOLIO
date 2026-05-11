@@ -3,139 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandini Doraswamy | Aspiring Data Analyst</title>
-    <!-- Core CSS (Includes Animations) -->
+    <title>Nandini Doraswamy | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Scroll Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Smooth Scrolling Header -->
-    <header class="navbar">
+    <nav class="navbar">
         <div class="logo">ND<span>.</span></div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <!-- Hero Section with Animated Background -->
     <section id="home" class="hero">
-        <div class="mesh-bg"></div> <!-- Animated background element -->
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
-            <div class="profile-placeholder">ND</div>
-            <h1 class="glitch" data-text="Nandini Doraswamy">Nandini Doraswamy</h1>
-            <p class="tagline">Aspiring Data Analyst | Python • SQL • Excel • Automation</p>
-            <p class="intro">Computer Science graduate passionate about Data Analytics and solving real-world problems through data.</p>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <div class="profile-hex">ND</div>
+            <h1 class="gradient-text">Nandini Doraswamy</h1>
+            <p class="tagline">Aspiring Data Analyst | Python • SQL • R • Automation</p>
             <div class="hero-btns">
-                <a href="#" class="btn btn-primary pulse">Resume <i class="fas fa-download"></i></a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#" class="btn btn-primary shadow-pulse">Download Resume <i class="fas fa-file-download"></i></a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section with Fade-In -->
     <section id="about" class="section">
-        <h2 class="section-title" data-aos="fade-right">About Me</h2>
+        <h2 class="section-title" data-aos="fade-right">Professional Summary</h2>
         <div class="glass-card" data-aos="fade-up">
-            <p>I recently completed my Computer Science Engineering graduation from <strong>Sree Venkateswara College of Engineering</strong> with an <strong>8.0 CGPA</strong>. I am passionate about Data Analytics, automation, and real-world problem solving.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section with Staggered Grid Animations -->
-    <section id="skills" class="section">
-        <h2 class="section-title" data-aos="fade-right">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fab fa-python skill-icon"></i>
-                <span>Python</span>
-            </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-database skill-icon"></i>
-                <span>SQL / MySQL</span>
-            </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-chart-line skill-icon"></i>
-                <span>Power BI</span>
-            </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
-                <i class="fas fa-file-excel skill-icon"></i>
-                <span>Excel</span>
-            </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
-                <i class="fas fa-server skill-icon"></i>
-                <span>SSIS/SSRS</span>
-            </div>
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
-                <i class="fab fa-java skill-icon"></i>
-                <span>Java</span>
+            <p>Recent Computer Science Engineering graduate from <strong>Sree Venkateswara College of Engineering (8.0 CGPA)</strong>. I specialize in transforming raw data into actionable insights through Python automation and SQL. My technical foundation is backed by certifications from <strong>IIT Kanpur (NPTEL)</strong> and <strong>IBM</strong>.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item"><span>95%</span><p>Intermediate</p></div>
+                <div class="stat-item"><span>9.5</span><p>10th GPA</p></div>
+                <div class="stat-item"><span>8.0</span><p>B.Tech CGPA</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section with Smooth Slide -->
     <section id="experience" class="section">
-        <h2 class="section-title" data-aos="fade-right">Professional Experience</h2>
-        <div class="glass-card experience-card" data-aos="fade-up">
-            <div class="card-header">
+        <h2 class="section-title" data-aos="fade-right">Internships & Experience</h2>
+        <div class="timeline">
+            <div class="glass-card timeline-item" data-aos="fade-left">
+                <span class="badge-primary">Main Internship</span>
                 <h3>Data Analyst Intern</h3>
-                <span class="date">Jan 2026 – Apr 2026</span>
+                <p class="company">Omega Healthcare | Jan 2026 – Apr 2026</p>
+                <p class="desc">Automated manual Excel workflows using Python and PostgreSQL, reducing process time from 4 hours to 15 minutes.</p>
             </div>
-            <p class="company">Omega Healthcare</p>
-            <p class="desc">Developed a Python automation engine reducing a 4-hour process to 15 minutes.</p>
+
+            <div class="glass-card timeline-item" data-aos="fade-right">
+                <span class="badge-secondary">Technical Intern</span>
+                <h3>Python Intern</h3>
+                <p class="company">TechLogic IT Solutions | Dec 2025 – Mar 2026</p>
+                <p class="desc">Worked on real-world Python tasks and projects in an offline professional environment.</p>
+            </div>
+
+            <div class="glass-card timeline-item" data-aos="fade-left">
+                <span class="badge-outline">Virtual</span>
+                <h3>Android Developer Intern</h3>
+                <p class="company">Google for Developers (AICTE) | Jul – Sep 2025</p>
+                <p class="desc">Completed 10-week intensive training. Achieved <strong>Grade E (Excellent)</strong>.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section with Flip-In -->
+    <section id="certifications" class="section">
+        <h2 class="section-title" data-aos="fade-right">Global Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card glass-card" data-aos="flip-left">
+                <div class="topper-label">Top 5% Topper</div>
+                <i class="fas fa-award icon"></i>
+                <h3>Data Analysis & Decision Making</h3>
+                <p>NPTEL | IIT Kanpur</p>
+                <span class="score">Score: 75% (Elite)</span>
+            </div>
+
+            <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fab fa-ibm icon"></i>
+                <h3>R Programming Basics</h3>
+                <p>IBM | edX</p>
+                <span class="date">Issued June 2024</span>
+            </div>
+
+            <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fas fa-code icon"></i>
+                <h3>SQL (Basic)</h3>
+                <p>HackerRank</p>
+                <span class="date">Verified 2025</span>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
-        <div class="contact-card glass-card" data-aos="flip-up" data-aos-duration="1000">
-            <h2>Let's Connect</h2>
-            <p class="cta-text">I'm actively seeking opportunities as a Data Analyst.</p>
-            <div class="contact-links">
-                <a href="mailto:nandini@email.com"><i class="fas fa-envelope"></i> nandininagaraj84@email.com</a>
-                <a href="#"><i class="fab fa-linkedin"></i> linkedin.com/in/nandini-doraswamy</a>
-                <a href="tel:+910000000000"><i class="fas fa-phone"></i> +91 91107 49355</a>
+        <div class="contact-container glass-card" data-aos="zoom-in">
+            <h2>Get In Touch</h2>
+            <div class="contact-methods">
+                <a href="mailto:nandini@email.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="tel:+910000000000"><i class="fas fa-phone"></i> Call</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Nandini Doraswamy. Built with Passion.</p>
+        <p>&copy; 2026 Nandini Doraswamy | Professional Portfolio</p>
     </footer>
 
-    <!-- AOS Scroll Animation Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize Animations
-        AOS.init();
-
-        // Highlighting active nav link based on scroll position
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-links a');
-
-        window.onscroll = () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href').includes(current)) {
-                    a.classList.add('active');
-                }
-            });
-        };
-    </script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
-
 </html>
